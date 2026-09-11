@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="InnerIsland 依恋倾向自我探索：30 道题，四维得分。RSQ 中文改编版，非诊断工具。">
+<title>InnerIsland · 依恋倾向自我探索</title>
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%239a4760'/%3E%3Cpath d='M16 25S6 19 6 12a5 5 0 0 1 10-1 5 5 0 0 1 10 1c0 7-10 13-10 13' fill='white'/%3E%3C/svg%3E">
+<style>
+:root{--paper:#fcf9f7;--white:#fff;--rose:#9a4760;--ink:#352d32;--muted:#74696e;--line:#e9dedf;--blush:#f4e6e8;--shadow:0 20px 65px #59333b09}
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7}button,input{font:inherit}button,a,input{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.4}a{color:var(--rose);text-underline-offset:4px}:focus-visible{outline:3px solid var(--rose);outline-offset:5px}button{touch-action:manipulation}.phone{max-width:1120px;margin:auto;padding:0 48px}.topbar{height:112px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.logo{width:38px;height:38px;display:grid;place-items:center;background:var(--rose);border-radius:14px}.logo svg{width:23px}.name{display:flex;flex-direction:column}.brand-main{font:600 22px Georgia,serif;letter-spacing:.3px}.brand-sub{font-size:12px;color:var(--muted)}.top-note{font-size:12px;letter-spacing:2px;color:var(--muted)}.screen{display:none;padding:48px 0 64px}.screen.active{display:block;animation:appear .25s ease}.hero{display:grid;grid-template-columns:1.2fr 1fr;column-gap:60px;align-items:center;padding:30px 0 10px}.hero-copy{grid-column:1;grid-row:1}.eyebrow{font-size:12px;letter-spacing:2.5px;color:var(--rose);font-weight:600;margin:0 0 22px}.hero h1{font-family:"Songti SC",SimSun,serif;font-size:52px;line-height:1.35;letter-spacing:2px;font-weight:500;margin:0}.hero h1 em{font-style:normal;color:var(--rose)}.sub{font-size:16px;color:var(--muted);line-height:1.95;margin:22px 0 0;max-width:370px}.cover-art{grid-column:2;grid-row:1 / 3;align-self:stretch;border-radius:180px 180px 24px 24px;background:linear-gradient(155deg,#f5e7e7,#eedadc);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:450px;position:relative;border:1px solid #ead5d9}.cover-art:before{content:"";position:absolute;inset:19px;border:1px solid #ffffff90;border-radius:inherit;pointer-events:none}.hero-illu{width:85%;max-width:320px;height:auto}.art-caption{text-align:center;font-size:13px;letter-spacing:4px;color:#875565;margin:24px 0 0}.art-caption span{display:block;font:italic 20px Georgia,serif;letter-spacing:0;margin-top:8px}.start-wrap{grid-row:2;grid-column:1;margin-top:34px;max-width:380px}.facts{display:flex;gap:0;margin-bottom:26px;font-size:14px;color:var(--muted)}.facts span{padding:0 20px;border-right:1px solid var(--line)}.facts span:first-child{padding-left:0}.facts span:last-child{border:0}.facts b{color:var(--ink);font-weight:600}.btn{border:1px solid transparent;border-radius:14px;padding:15px 24px;font-weight:600;transition:background .2s,transform .2s}.btn-primary,.btn-next{background:var(--rose);color:#fff}.start-wrap .btn-primary{width:100%;display:flex;justify-content:space-between;align-items:center}.btn-primary:hover,.btn-next:hover{background:#81364c}.btn-ghost,.btn-prev{background:#fff;border-color:var(--line);color:var(--ink)}.btn-ghost:hover,.btn-prev:hover{background:var(--blush)}.note{font-size:12px;color:var(--muted);line-height:1.8;margin:14px 0 0}.intro-guide{margin-top:44px;border-top:1px solid var(--line);padding-top:23px;display:grid;grid-template-columns:130px 1fr;gap:24px}.intro-guide h2{font-size:14px;font-weight:600;margin:0}.intro-guide p{font-size:14px;color:var(--muted);margin:0;max-width:730px}details{border:1px solid var(--line);border-radius:16px;padding:18px 22px;background:#ffffff80;margin-top:20px}summary{cursor:pointer;font-size:14px;font-weight:600}details p,details li{font-size:14px;color:var(--muted)}details table{width:100%;border-collapse:collapse;font-size:13px;margin:16px 0}td,th{padding:9px 5px;border-bottom:1px solid var(--line);text-align:left}.foot{text-align:center;padding:0 0 28px;font-size:12px;color:var(--muted);letter-spacing:1px}
+#screen-quiz{max-width:660px;margin:auto;padding-top:32px}.progress-meta{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-bottom:12px}.qnum b{font:500 27px Georgia,serif;color:var(--rose)}.progress-track{height:4px;border-radius:5px;background:var(--line);overflow:hidden}.progress-fill{height:100%;background:var(--rose);transition:width .2s}.qcard{padding:32px 36px;background:#fff;border:1px solid var(--line);border-radius:24px;margin-top:28px;box-shadow:var(--shadow)}.q-label{font-size:12px;color:var(--rose);letter-spacing:1px;margin-bottom:15px}.q-text{font-size:23px;line-height:1.65;font-weight:550;min-height:76px;margin:0}.opts{display:grid;gap:10px;margin-top:25px;border:0;padding:0;min-width:0}.opt{position:relative;display:flex;align-items:center;gap:14px;min-height:55px;border:1px solid var(--line);border-radius:12px;padding:12px 17px;font-size:16px;cursor:pointer;background:#fff;transition:background .15s,border-color .15s}.opt:hover{background:#fcf8f9;border-color:#b98b99}.opt.sel{background:#f8ecef;border-color:var(--rose);color:#833a51}.opt input{accent-color:var(--rose);width:19px;height:19px;margin:0;flex-shrink:0}.opt .value{margin-left:auto;color:var(--muted);font-size:12px}.nav{display:flex;gap:12px;margin-top:20px}.btn-prev{flex:0 0 120px}.btn-next{flex:1}.quiz-note{text-align:center;font-size:12px;color:var(--muted);margin-top:16px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#screen-result{max-width:840px;margin:auto}.res-banner{padding:38px 40px;background:#f1e1e5;border:1px solid #e4cbd3;border-radius:24px}.rb-label{font-size:12px;letter-spacing:2px;color:#7d4c5b}.rb-type{font-family:"Songti SC",SimSun,serif;font-size:38px;font-weight:500;line-height:1.4;margin:12px 0}.rb-en{font:italic 16px Georgia,serif;color:#7d4c5b}.rb-desc{font-size:16px;margin:20px 0 0;line-height:1.9;max-width:650px}.sec-title{font-size:20px;font-weight:600;margin:32px 0 16px}.bars-card{background:#fff;border:1px solid var(--line);padding:28px;border-radius:20px}.bar-row+.bar-row{margin-top:24px}.bar-head{display:flex;justify-content:space-between;gap:15px;align-items:baseline;margin-bottom:10px}.bar-head .t{font-size:16px;font-weight:600}.bar-head small{font-size:11px;color:var(--muted);margin-left:8px;font-weight:400}.bar-head .v{font-variant-numeric:tabular-nums;font-size:16px;white-space:nowrap}.bar-track{height:8px;background:#f0ebed;border-radius:4px;overflow:hidden}.bar-fill{height:100%;border-radius:4px}.axis{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:20px}.primary .t:after{content:"本次较高";font-size:11px;font-weight:400;margin-left:8px;color:var(--rose)}.type-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.type-card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px}.type-card h3{margin:0;font-size:18px;font-weight:600}.type-card .en{font-size:11px;color:var(--muted);letter-spacing:1px}.type-card p{font-size:15px;margin:14px 0 0;line-height:1.9}.reflection{border-left:2px solid #cc9ead;padding-left:14px;color:var(--muted)}.res-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.res-actions .btn{flex:1;white-space:nowrap}.flag{padding:16px 20px;background:#faf2e8;border:1px solid #ead9c2;border-radius:14px;font-size:14px;margin-top:20px}.model-card{display:grid;grid-template-columns:1fr 1fr;gap:14px}.model-item{padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px}.mi-t{font-size:14px}.mi-v{font-size:22px;margin:8px 0}.mi-s{font-size:12px;color:var(--muted)}@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(min-width:1400px){.screen{padding-top:65px}.hero{padding-top:35px}}@media(max-width:760px){.phone{padding:0 24px}.topbar{height:86px}.top-note{font-size:11px;letter-spacing:1px}.screen{padding:28px 0 40px}.hero{grid-template-columns:1fr;gap:0;padding:0;max-width:480px;margin:auto}.hero-copy{grid-row:1;grid-column:1;text-align:center}.eyebrow{font-size:11px;margin-bottom:16px}.hero h1{font-size:36px;letter-spacing:1px}.sub{font-size:14px;line-height:1.8;margin:16px auto 0;max-width:310px}.cover-art{grid-row:2;grid-column:1;border:0;background:none;min-height:0;height:150px;margin:12px auto 0;width:100%;border-radius:0}.cover-art:before{display:none}.hero-illu{width:192px;height:142px}.art-caption{display:none}.start-wrap{grid-row:3;grid-column:1;margin:10px auto 0;width:100%;max-width:360px}.facts{justify-content:center;margin-bottom:19px;font-size:13px}.facts span:first-child{padding-left:0}.start-wrap>.note{text-align:center}.intro-guide{margin-top:30px;display:block;padding-top:20px}.intro-guide h2{margin-bottom:8px}.intro-guide p{font-size:13px}.qcard{padding:26px 23px;margin-top:24px}.q-text{font-size:21px;min-height:70px}.progress-meta{font-size:12px}.q-label{letter-spacing:0}.qnum b{font-size:24px}.res-banner{padding:28px 24px}.rb-type{font-size:30px}.rb-desc{font-size:15px}.type-grid{grid-template-columns:1fr}.bars-card{padding:22px}.bar-head small{display:none}.primary .t:after{display:block;margin-left:0}.model-card{grid-template-columns:1fr}.res-actions{flex-direction:column}.foot{font-size:11px}.brand-main{font-size:20px}details{padding:16px}details table{font-size:12px}.sec-title{font-size:18px}}@media(max-width:360px){.phone{padding:0 18px}.hero h1{font-size:32px}.top-note{display:none}.qcard{padding:22px 18px}.facts span{padding:0 14px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}@media print{body{background:#fff}.phone{max-width:none;padding:0}.topbar{height:70px}.screen{display:none!important}#screen-result.active{display:block!important;padding:20px 0}.res-actions,.foot{display:none}.res-banner,.bars-card,.type-card{break-inside:avoid;box-shadow:none}details{display:block}details>*{display:block}.type-grid{display:block}.type-card{margin-bottom:12px}}
+
+/* Unified typography */
+html,body,button,input,textarea,select,.brand-main,.hero h1,.art-caption span,.qnum b,.rb-type,.rb-en{font-family:'Microsoft YaHei','微软雅黑',sans-serif;}
+/* Fit the main activity to the viewport without browser scaling. */
+@media screen{
+.phone{max-width:1000px;padding:0 32px}.topbar{height:60px}.screen{padding:12px 0 16px}.hero{padding:8px 0 0;column-gap:48px}.hero h1{font-size:42px}.eyebrow{margin-bottom:16px}.sub{margin-top:16px}.cover-art{min-height:330px;border-radius:150px 150px 22px 22px}.hero-illu{max-width:240px}.art-caption{margin-top:12px}.art-caption span{font-size:16px}.start-wrap{margin-top:22px}.facts{margin-bottom:18px}.btn{padding:10px 20px}.intro-guide{display:block;margin-top:22px;padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:#ffffff80}.intro-guide p{margin-top:12px;max-width:none}.method{margin-top:12px;padding:14px 18px}.foot{padding-bottom:12px}
+#screen-quiz{max-width:600px;padding-top:18px;padding-bottom:16px}.progress-meta{margin-bottom:8px}.qnum b{font-size:22px}.qcard{padding:22px 28px;margin-top:18px}.q-label{margin-bottom:10px}.q-text{font-size:20px;min-height:62px;line-height:1.6}.opts{margin-top:16px;gap:8px}.opt{min-height:48px;padding:9px 15px}.nav{margin-top:14px}.quiz-note{margin-top:10px;margin-bottom:0}.phone:has(#screen-quiz.active)>.foot{display:none}
+#screen-result{padding-top:24px}.res-banner{padding:26px 30px}.rb-type{font-size:30px}.rb-desc{margin-top:14px}.sec-title{margin:24px 0 12px}.bars-card{padding:22px}.bar-row+.bar-row{margin-top:18px}.type-card{padding:20px}.res-actions{margin-top:22px}
+}
+@media screen and (max-width:760px){
+.phone{padding:0 22px}.topbar{height:54px}.screen{padding:10px 0}.hero{padding:0;gap:0}.hero h1{font-size:32px}.eyebrow{font-size:10px;letter-spacing:1.8px;margin-bottom:12px}.sub{margin-top:12px}.cover-art{min-height:0;height:108px;margin-top:6px;border-radius:0}.hero-illu{width:148px;height:108px}.start-wrap{margin-top:4px}.facts{margin-bottom:14px}.start-wrap .note{margin-top:10px}.intro-guide{margin-top:20px}.intro-guide p{font-size:14px}.foot{padding-bottom:12px}.qcard{padding:20px;margin-top:16px}.q-text{font-size:19px;min-height:62px}.q-label{font-size:12px}.opt{min-height:47px}.res-banner{padding:24px}.rb-type{font-size:27px}
+}
+@media screen and (max-height:700px){
+.topbar{height:50px}.screen{padding-top:8px;padding-bottom:8px}.hero{padding-top:0}.cover-art{min-height:290px}.hero h1{font-size:36px}.intro-guide{margin-top:16px}.foot{padding-bottom:8px}
+#screen-quiz{padding-top:12px}.qcard{margin-top:12px;padding:16px 22px}.q-label{margin-bottom:8px}.q-text{font-size:18px;min-height:58px}.opts{margin-top:12px;gap:6px}.opt{min-height:44px;padding:7px 14px}.nav{margin-top:10px}.nav .btn{padding:10px 18px}.quiz-note{margin-top:8px}
+}
+@media screen and (max-width:760px) and (max-height:700px){
+.phone{padding:0 18px}.screen{padding-top:8px}.hero h1{font-size:30px}.cover-art{min-height:0;height:74px;margin:2px 0}.hero-illu{width:104px;height:74px}.sub{font-size:13px;margin-top:10px}.eyebrow{margin-bottom:10px}.facts{font-size:12px;margin-bottom:12px}.facts span{padding:0 16px}.intro-guide{margin-top:14px;padding:11px 14px}.method{padding:11px 14px;margin-top:10px}.qcard{padding:14px 16px}.q-text{font-size:18px}.quiz-note{font-size:11px}.brand-main{font-size:19px}.top-note{font-size:10px}
+}
+@media screen and (max-width:760px) and (max-height:600px){
+.topbar{height:48px}.cover-art{height:44px}.hero-illu{width:64px;height:44px}#screen-quiz{padding-top:8px}.q-text{line-height:1.45}.q-label{margin-bottom:6px}.quiz-note{display:none}.qcard{padding-top:12px;padding-bottom:12px}
+}
+@media screen and (max-width:360px){.nav{gap:10px}.nav .btn-prev{flex-basis:96px}.nav .btn{padding-left:10px;padding-right:10px;white-space:nowrap}}
+
+/* Result section settings */
+@media screen{
+#screen-result{max-width:600px;padding-top:18px;padding-bottom:20px}
+#screen-result .res-banner{padding:20px 24px;border-radius:20px}
+#screen-result .rb-label{letter-spacing:1px}
+#screen-result .rb-type{font-size:24px;line-height:1.45;margin:8px 0;font-weight:600}
+#screen-result .rb-en{font-size:12px;font-style:normal;letter-spacing:1px}
+#screen-result .rb-desc{font-size:15px;line-height:1.75;margin-top:12px}
+#screen-result .sec-title{font-size:17px;margin:20px 0 10px}
+#screen-result .bars-card{padding:18px 22px;border-radius:18px}
+#screen-result .bar-row+.bar-row{margin-top:14px}
+#screen-result .bar-head{margin-bottom:6px}
+#screen-result .bar-head .t,#screen-result .bar-head .v{font-size:14px}
+#screen-result .bar-track{height:6px}
+#screen-result .axis{margin-top:14px}
+#screen-result .note{margin-top:10px;line-height:1.7}
+#screen-result .type-grid{gap:12px}
+#screen-result .type-card{padding:16px 18px;border-radius:16px}
+#screen-result .type-card h3{font-size:16px}
+#screen-result .type-card p{font-size:15px;line-height:1.75;margin-top:10px}
+#screen-result .flag{padding:12px 16px;margin-top:14px;font-size:13px;line-height:1.7}
+#screen-result details{padding:14px 18px;margin-top:14px;border-radius:14px}
+#screen-result .model-item{padding:14px}
+#screen-result .mi-v{font-size:20px;margin:6px 0}
+#screen-result .res-actions{gap:10px;margin-top:18px}
+#screen-result .res-actions .btn{font-size:14px;padding:11px 14px;min-height:44px}
+}
+@media screen and (max-width:760px){
+#screen-result .res-banner{padding:18px 20px}
+#screen-result .rb-type{font-size:22px}
+#screen-result .bars-card{padding:16px 18px}
+#screen-result .primary .t:after{display:inline;margin-left:6px;font-size:10px}
+#screen-result .res-actions{flex-direction:row;flex-wrap:wrap}
+#screen-result .res-actions .btn:first-child{flex-basis:100%}
+#screen-result .res-actions .btn:not(:first-child){flex:1}
+}
+@media screen and (max-height:700px){#screen-result{padding-top:12px}}
+
+/* ===== 优化后封面样式：微调缩小与紧凑排列 ===== */
+#screen-intro {
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+.intro-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-icon {
+    width: 26px;
+    height: 26px;
+    color: var(--rose);
+    margin-bottom: 6px;
+}
+#intro-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #3a3a3a;
+    margin: 0 0 6px 0;
+    letter-spacing: 1px;
+    line-height: 1.25;
+}
+#intro-title em {
+    color: var(--rose);
+    font-style: normal;
+}
+.intro-sub {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 10px 0;
+    line-height: 1.45;
+}
+.intro-facts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 12px;
+}
+.intro-facts b {
+    font-size: 15px;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    color: #222;
+}
+.fact-divider {
+    color: #ddd;
+    font-size: 12px;
+}
+.intro-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 14px 18px;
+    text-align: left;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+    width: 100%;
+}
+.intro-card h2 {
+    font-size: 14px;
+    color: var(--rose);
+    text-align: center;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+.card-line {
+    width: 20px;
+    height: 2px;
+    background: var(--rose);
+    margin: 0 auto 10px auto;
+}
+.intro-card p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.55;
+    margin: 0 0 8px 0;
+}
+.intro-card p:last-child {
+    margin-bottom: 0;
+}
+.card-source {
+    font-size: 11px;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    margin-top: 8px !important;
+    line-height: 1.4;
+}
+.card-source a {
+    color: var(--rose);
+    text-decoration: none;
+}
+.intro-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+.intro-btn:hover {
+    background: #81364c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(154, 71, 96, 0.25);
+}
+.intro-btn .arrow {
+    font-size: 16px;
+}
+
+/* 移动端细调 */
+@media (max-width: 760px) {
+    #screen-intro {
+        padding-top: 6px;
+        padding-bottom: 10px;
+    }
+    .intro-container {
+        max-width: 100%;
+    }
+    #intro-title {
+        font-size: 22px;
+    }
+    .intro-sub {
+        font-size: 12px;
+    }
+    .intro-card {
+        padding: 12px 14px;
+        margin-bottom: 12px;
+    }
+    .intro-card p {
+        font-size: 11.5px;
+    }
+    .intro-facts {
+        margin-bottom: 10px;
+        gap: 8px;
+    }
+    .intro-btn {
+        font-size: 14px;
+        max-width: 240px;
+        padding: 9px 16px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="phone">
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21S4 15.5 4 9.8C4 4 10 3 12 6.1c2-3.1 8-2.1 8 3.7C20 15.5 12 21 12 21Z" fill="white"/></svg>
+    </div>
+    <div class="name">
+      <span class="brand-main">InnerIsland</span>
+      <span class="brand-sub">@小红书</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ 封面 ============ -->
+<section id="screen-intro" class="screen active" aria-labelledby="intro-title">
+  <div class="intro-container">
+    <div class="intro-icon">
+      <svg viewBox="0 0 24 24" fill="none" width="100%" height="100%"><path d="M12 21S4 15.5 4 9.8C4 4 10 3 12 6.1c2-3.1 8-2.1 8 3.7C20 15.5 12 21 12 21Z" fill="currentColor"/></svg>
+    </div>
+    <h1 id="intro-title">了解你的<em>依恋倾向</em></h1>
+    <p class="intro-sub">从日常感受出发，凭直觉作答，了解自己在亲密与独立之间的位置。</p>
+
+    <div class="intro-facts">
+      <span><b>30</b> 道题</span>
+      <span class="fact-divider">|</span>
+      <span>约 <b>5</b> 分钟</span>
+      <span class="fact-divider">|</span>
+      <span><b>4</b> 维画像</span>
+    </div>
+
+    <div class="intro-card">
+      <h2>关于本量表</h2>
+      <div class="card-line"></div>
+      <p>本测试基于 RSQ（Relationship Scales Questionnaire）中文改编版，面向成年人，共 30 题，约 5 分钟完成。题目译文未经独立中文样本信效度检验，结果仅供自我探索，不能用于临床诊断、筛选或决策。</p>
+      <p>分数仅表示你对相关描述的认同程度：没有总分、概率、人群排名或诊断分界线，四个维度可同时较高，也不据此把任何人归为单一类型。</p>
+      <p class="card-source">来源：Griffin, D. W., &amp; Bartholomew, K. (1994). <i>Journal of Personality and Social Psychology, 67</i>(3), 430–445. <a href="https://doi.org/10.1037/0022-3514.67.3.430" target="_blank" rel="noopener noreferrer">原始论文</a> · <a href="https://www.innopraxis.com/article/125940717.pdf" target="_blank" rel="noopener noreferrer">四维条目研究</a> · <a href="https://eprints.gla.ac.uk/190238/1/190238.pdf" target="_blank" rel="noopener noreferrer">因子结构研究</a></p>
+    </div>
+
+    <button class="btn btn-primary intro-btn" onclick="startTest()">开始探索 <span class="arrow">→</span></button>
+  </div>
+</section>
+
+<!-- ============ 答题 ============ -->
+<section id="screen-quiz" class="screen" aria-labelledby="qText">
+  <div class="progress-zone">
+    <div class="progress-meta">
+      <span class="qnum">第 <b id="qNow">1</b> / 30 题</span>
+      <span id="answeredCount">已完成 0 题</span>
+    </div>
+    <div class="progress-track" role="progressbar" aria-label="作答完成进度" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0" id="progress">
+      <div class="progress-fill" id="pFill"></div>
+    </div>
+  </div>
+  <div class="qcard">
+    <div class="q-label">以下描述在多大程度上符合你？</div>
+    <h1 class="q-text" id="qText" tabindex="-1"></h1>
+    <fieldset class="opts" id="optBox"><legend class="sr-only">选择符合程度</legend></fieldset>
+  </div>
+  <div class="nav">
+    <button class="btn btn-prev" id="btnPrev" onclick="goPrev()">上一题</button>
+    <button class="btn btn-next" id="btnNext" disabled onclick="goNext()">下一题 →</button>
+  </div>
+  <p class="quiz-note">选好后点击下一题 · 可返回修改 · 刷新会清除作答</p>
+  <p class="sr-only" id="status" role="status"></p>
+</section>
+
+<!-- ============ 结果 ============ -->
+<section id="screen-result" class="screen" aria-labelledby="result-title">
+  <div id="resScroll"></div>
+</section>
+</main>
+
+<footer class="foot">InnerIsland · 给自己一点理解的空间</footer>
+</div>
+
+<noscript>请启用 JavaScript 后进行测试。此页面在本地计算结果。</noscript>
+
+<script>
+const ITEMS=["我很难依赖别人。","拥有独立感对我而言非常重要。","我很容易在情感上和他人亲近。","我希望能和另一个人完全融为一体。","我担心如果和别人过于亲近，我会受到伤害。","就算没有亲密的情感关系，我也觉得自在。","我不确定在我需要的时候，别人总能在我身边供我依靠。","我希望和他人达到完全的情感亲密。","我担心自己会独自一人。","依赖他人时，我会觉得自在。","我常常担心伴侣并不是真的爱我。","我很难完全信任别人。","我担心别人和我走得太近。","我渴望拥有情感上亲密的关系。","别人依赖我时，我会觉得自在。","我担心别人不像我看重他们那样看重我。","当我需要别人时，他们总是不在身边。","我想要和对方完全融合的渴望，有时会把人吓跑。","能够自立、不必依靠别人，对我非常重要。","一旦有人和我过于亲近，我就会紧张不安。","我常常担心伴侣不想继续和我在一起。","我不希望别人依赖我。","我担心自己会被抛弃。","和他人亲近会让我有些不自在。","我发现别人不愿意像我期待的那样，和我亲近。","我更愿意不依赖别人。","我知道当我需要的时候，别人会在我身边。","我担心别人无法接纳我。","伴侣常常希望我更加亲密，但这超出了我舒服的范围。","对我来说，和他人亲近还算容易。"];
+const METHODOLOGY="<details class=\"method\"><summary>了解量表、计分与使用范围</summary><p>本页面为 RSQ（Relationship Scales Questionnaire，关系量表问卷）的中文改编自我探索版，面向成年人。题目译文未经过本版本独立的中文样本信效度检验，不能视为标准化中文量表或用于临床诊断、筛选和决策。</p><p>保留 30 题、1–5 分作答和四个原型维度的均分。分数表示对相关描述的认同程度；没有总分、概率、人口百分位或诊断分界线。四维可以同时较高，也可以并列，不据此将人归为单一类型。</p><table><caption class=\"sr-only\">四维计分条目</caption><thead><tr><th scope=\"col\">维度</th><th scope=\"col\">计分题号</th><th scope=\"col\">反向题</th></tr></thead><tbody><tr><td>安全型</td><td>3、9、10、15、28</td><td>9、28</td></tr><tr><td>疏离型</td><td>2、6、19、22、26</td><td>无</td></tr><tr><td>专注型（痴迷型）</td><td>6、8、16、25</td><td>6</td></tr><tr><td>恐惧型</td><td>1、5、12、24</td><td>无</td></tr></tbody></table><p>反向分 = 6 − 原始分；各维度取所属题目处理后的平均分。共使用 17 个不同条目，第 6 题跨维度使用、方向相反；其余 13 题保留问卷结构，但不进入此四维计分。并列按未四舍五入的分数判断。显示“分数接近”采用前两名相差不超过 0.25 分的界面提示规则，不是量表的心理学阈值。</p><p>来源：Griffin, D. W., &amp; Bartholomew, K. (1994). Models of the self and other: Fundamental dimensions underlying measures of adult attachment. <i>Journal of Personality and Social Psychology, 67</i>(3), 430–445. <a href=\"https://doi.org/10.1037/0022-3514.67.3.430\" target=\"_blank\" rel=\"noopener noreferrer\">原始论文</a>。</p><p>核对资料：<a href=\"https://www.innopraxis.com/article/125940717.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">RSQ 四维条目及计分研究</a>；<a href=\"https://etheses.bham.ac.uk/3845/1/DeClaire_12_ForPsyD.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">RSQ 测量评价（论文第 4 章）</a>；<a href=\"https://eprints.gla.ac.uk/190238/1/190238.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">RSQ 因子结构研究</a>。既有研究对其结构和部分分量表信度提出限制，因此本页以连续得分及探索性说明呈现。</p><p>本页面不联网提交答案，不使用浏览器持久存储。刷新或关闭页面会清除作答。外部文献链接仅在你主动打开时访问。</p></details>";
+'use strict';
+const SCALES={
+  secure:{name:'安全型',en:'SECURE',items:[3,9,10,15,28],rev:[9,28],color:'#9a4760',desc:'这一维度关注在亲密和相互依赖中感到自在，以及较少担心孤独或不被接纳。分数较高，表示你更认同这些描述；它不能证明你的关系始终顺利，也不能说明你有怎样的成长经历。',reflect:'可以回想：哪些具体的回应，让你能够安心表达需要？'},
+  dismissing:{name:'疏离型',en:'DISMISSING',items:[2,6,19,22,26],rev:[],color:'#af8056',desc:'这一维度关注独立、自立，以及较少依赖他人或被他人依赖的偏好。分数较高，表示你更认同这类感受；重视独立本身不等于缺少感情，也不能单凭分数判断关系质量。',reflect:'可以回想：什么时候独立让你舒服，什么时候你也想获得支持？'},
+  preoccupied:{name:'专注型',en:'PREOCCUPIED',items:[6,8,16,25],rev:[6],color:'#87729d',desc:'这一维度在原有中文表述中也称“痴迷型”。它关注对亲密的强烈需要，以及担心他人不够重视或不愿同样亲近。分数较高，表示你更认同这些感受，不是对你性格或价值的评价。',reflect:'可以回想：当你希望得到回应时，你最想让对方理解的需要是什么？'},
+  fearful:{name:'恐惧型',en:'FEARFUL',items:[1,5,12,24],rev:[],color:'#648894',desc:'这一维度关注依赖、信任或靠近他人时的困难，以及对受伤的担心。分数较高，表示你更认同这类感受；这不能直接证明你经历过创伤，也不代表你无法建立亲密关系。',reflect:'可以回想：怎样的距离、边界和回应，会让你觉得更安全？'}
+};
+const LABELS=['完全不像我','不太像我','有点像我','比较像我','非常像我'];
+let answers=Array(30).fill(null),cur=0;
+const $=id=>document.getElementById(id);
+
+function activate(name){
+  document.querySelectorAll('.screen').forEach(el=>el.classList.toggle('active',el.id==='screen-'+name));
+  window.scrollTo(0,0);
+}
+function progress(){
+  const n=answers.filter(Number.isInteger).length;
+  $('pFill').style.width=n/30*100+'%';
+  $('answeredCount').textContent='已完成 '+n+' 题';
+  $('progress').setAttribute('aria-valuenow',n);
+}
+function startTest(){activate('quiz');renderQ(cur);}
+function renderQ(i){
+  cur=i;
+  $('qNow').textContent=i+1;
+  $('qText').textContent=ITEMS[i];
+  $('optBox').innerHTML='<legend class="sr-only">选择符合程度</legend>'+LABELS.map((label,k)=>`<label class="opt ${answers[i]===k+1?'sel':''}"><input type="radio" name="answer" value="${k+1}" ${answers[i]===k+1?'checked':''}><span>${label}</span><span class="value" aria-hidden="true">${k+1}</span></label>`).join('');
+  $('optBox').querySelectorAll('input').forEach(input=>input.addEventListener('change',()=>pick(i,Number(input.value))));
+  $('btnPrev').disabled=i===0;
+  $('btnNext').disabled=answers[i]===null;
+  $('btnNext').textContent=i===29?'查看我的画像 →':'下一题 →';
+  progress();
+  $('qText').focus({preventScroll:true});
+  window.scrollTo(0,0);
+}
+function pick(i,v){
+  if(i!==cur||!Number.isInteger(v)||v<1||v>5)return;
+  answers[i]=v;
+  $('optBox').querySelectorAll('input').forEach(input=>{
+    input.checked=Number(input.value)===v;
+    input.closest('label').classList.toggle('sel',input.checked);
+  });
+  $('btnNext').disabled=false;
+  progress();
+}
+function goPrev(){if(cur>0)renderQ(cur-1);}
+function goNext(){if(answers[cur]===null)return;if(cur<29)renderQ(cur+1);else showResult();}
+function calculate(values){
+  if(!Array.isArray(values)||values.length!==30||Array.from(values).some(v=>!Number.isInteger(v)||v<1||v>5))throw new Error('需要完成全部 30 题，每题为 1–5 分。');
+  const scores={};
+  for(const [key,sc]of Object.entries(SCALES)){
+    scores[key]=sc.items.reduce((sum,n)=>sum+(sc.rev.includes(n)?6-values[n-1]:values[n-1]),0)/sc.items.length;
+  }
+  const order=Object.keys(scores).sort((a,b)=>scores[b]-scores[a]);
+  const leaders=order.filter(k=>Math.abs(scores[k]-scores[order[0]])<1e-9);
+  return{scores,order,leaders,gap:scores[order[0]]-scores[order[1]],uniform:values.every(v=>v===values[0])};
+}
+function summaryOf(r){
+  if(r.leaders.length===4)return{title:'四维得分相同',en:'YOUR RELATIONSHIP PROFILE',text:'本次作答没有呈现出更突出的单一维度。你可以结合每一维的描述，回看自己在不同关系中的感受。'};
+  if(r.leaders.length>1)return{title:'多个维度并列较高',en:'YOUR RELATIONSHIP PROFILE',text:r.leaders.map(k=>SCALES[k].name).join('、')+'的得分并列最高。这里保留并列结果，不选定一个主导类型；不同感受可以同时存在。'};
+  let key=r.order[0];
+  return{title:SCALES[key].name+'维度得分较高',en:SCALES[key].en+' · RELATIVE TENDENCY',text:`在这次作答中，你对${SCALES[key].name}维度相关描述的认同程度相对较高。${r.gap<=.25?'与第二高维度仅相差 '+r.gap.toFixed(2)+' 分，分数接近，建议一起阅读。':'这只是四维得分的相对比较，请结合完整画像理解。'}分数不等于固定的身份标签。`};
+}
+function showResult(){
+  const missing=answers.findIndex(v=>!Number.isInteger(v)||v<1||v>5);
+  if(missing!==-1){activate('quiz');renderQ(missing);$('status').textContent='请先完成这一题。';return;}
+  const r=calculate(answers),summary=summaryOf(r);
+  const self=r.scores.secure+r.scores.dismissing-r.scores.fearful-r.scores.preoccupied;
+  const other=r.scores.secure+r.scores.preoccupied-r.scores.fearful-r.scores.dismissing;
+  const signed=v=>(Math.abs(v)<1e-9?0:v).toFixed(2);
+  const direction=v=>Math.abs(v)<1e-9?'正负方向平衡':v>0?'正向差值':'负向差值';
+  $('resScroll').innerHTML=`
+  <header class="res-banner">
+    <div class="rb-label">你的关系画像 · 30 / 30 已完成</div>
+    <h1 class="rb-type" id="result-title" tabindex="-1">${summary.title}</h1>
+    <div class="rb-en">${summary.en}</div>
+    <p class="rb-desc">${summary.text}</p>
+  </header>
+  ${r.uniform?'<div class="flag">你为全部题目选择了同一个选项。相同作答可能是真实感受，也可能无法充分表达差异；可回看正向与反向描述是否都符合自己。此提示不代表作答无效。</div>':''}
+  <h2 class="sec-title">四维依恋画像</h2>
+  <div class="bars-card">
+    ${r.order.map(k=>`
+      <div class="bar-row ${r.leaders.length<4&&r.leaders.includes(k)?'primary':''}">
+        <div class="bar-head">
+          <div class="t">${SCALES[k].name}<small>${SCALES[k].en}</small></div>
+          <div class="v">${r.scores[k].toFixed(2)} <span class="note">/ 5 分</span></div>
+        </div>
+        <div class="bar-track" aria-hidden="true">
+          <div class="bar-fill" style="width:${(r.scores[k]-1)/4*100}%;background:${SCALES[k].color}"></div>
+        </div>
+      </div>`).join('')}
+    <div class="axis"><span>1 分 · 较低认同</span><span>5 分 · 较高认同</span></div>
+    <p class="note">条形表示均分在 1–5 分区间的位置，不是概率或人群排名。四维分别计分，无须相加为 100%。</p>
+  </div>
+  <h2 class="sec-title">理解每一种感受</h2>
+  <div class="type-grid">
+    ${r.order.map(k=>`
+      <article class="type-card">
+        <h3>${SCALES[k].name}</h3>
+        <div class="en">${SCALES[k].en}</div>
+        <p>${SCALES[k].desc}</p>
+        <p class="reflection">${SCALES[k].reflect}</p>
+      </article>`).join('')}
+  </div>
+  <details>
+    <summary>进一步了解：自我与他人模型</summary>
+    <p>下方是四维原始均分组合得到的探索性差值，范围为 −8 至 +8。它们不是常模分数、诊断阈值或个人价值评定；接近零时尤其不宜判断正负倾向。</p>
+    <div class="model-card">
+      <div class="model-item">
+        <div class="mi-t">自我模型差值</div>
+        <div class="mi-v">${signed(self)}</div>
+        <div class="mi-s">${direction(self)} · 探索性参考</div>
+      </div>
+      <div class="model-item">
+        <div class="mi-t">他人模型差值</div>
+        <div class="mi-v">${signed(other)}</div>
+        <div class="mi-s">${direction(other)} · 探索性参考</div>
+      </div>
+    </div>
+    <p>自我 = 安全 + 疏离 − 恐惧 − 专注；他人 = 安全 + 专注 − 恐惧 − 疏离。这里不根据正负组合另行判定类型。</p>
+  </details>
+  ${METHODOLOGY}
+  <div class="res-actions">
+    <button class="btn btn-primary" onclick="reviewAnswers()">回看与修改答案</button>
+    <button class="btn btn-ghost" onclick="restart()">重新测试</button>
+    <button class="btn btn-ghost" onclick="backHome()">返回首页</button>
+  </div>
+  <p class="note">依恋感受可能随关系与经历变化。如果关系困扰持续影响生活，可考虑寻求专业心理支持。本页不能代替专业评估。</p>`;
+  activate('result');
+  $('result-title').focus({preventScroll:true});
+}
+function reviewAnswers(){activate('quiz');renderQ(0);}
+function restart(){answers=Array(30).fill(null);cur=0;$('resScroll').innerHTML='';activate('quiz');renderQ(0);}
+function backHome(){answers=Array(30).fill(null);cur=0;$('resScroll').innerHTML='';activate('intro');$('intro-title').setAttribute('tabindex','-1');$('intro-title').focus({preventScroll:true});}
+</script>
+</body>
+</html>
